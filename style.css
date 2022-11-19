@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+main::before {
+    content: "";
+    background: url("/images/bg.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+nav {
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.right-nav {
+    display: flex;
+    padding-bottom: 2rem;
+   border-bottom: 2px solid white;
+    
+}
+
+.right-nav > p {
+   margin-right: 3rem;
+   font-weight: 400;
+   font-size: 1.5rem;
+}
+
+.call {
+    position: relative;
+    margin-right: 0rem;
+}
+
+img[src="/images/call.png"] {
+    position: absolute;
+}
+
+section {
+    padding: 1rem;
+    position: relative;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+.right-sec {
+   padding: 1rem;
+}
+
+.right-sec button {
+  margin-top: 4rem;
+  padding: 1rem 3rem;
+  color: white;
+  font-size: 2rem;
+  border-radius: 5rem;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 2px solid white;
+  cursor:pointer;
+  overflow: hidden;
+}
+
+.glass1 {
+    position: absolute;
+    padding: 2rem 2rem;
+    top: 2.7rem;
+    right: 8rem;
+}
+
+.glass1::before {
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.257);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.icon {
+    display: inline-block;
+    padding: 0rem 3rem;
+    border-radius: 5rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.line {
+  width: .1rem;
+  height: 4rem;
+  background-color: white;
+  position: absolute;
+  right: 12rem;
+  top: 13.3rem;
+}
+
+.line::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  right: -.5rem;
+  top: 4rem;
+}
+
+
+.glass2 {
+  position: absolute;
+  padding: 2rem 2rem;
+  bottom: -7rem;
+  right: 25rem;
+}
+
+
+.glass2::before {
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.257);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.line2 {
+  width: 4rem;
+  height: .1rem;
+  background-color: white;
+  position: absolute;
+  right: 21rem;
+  top: 22rem;
+}
+
+.line2::after {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -.5rem;
+  right: -.5rem;
+}
+
+
+
+@media screen and (max-width: 640px) {
+ 
+  nav {
+    margin-bottom: 0rem;
+    padding: .5rem;
+  }
+
+.right-nav {
+    display: none;
+  }
+
+section {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.right-sec {
+  margin: 0rem;
+  padding: 0rem;
+  text-align: center;
+}
+
+.right-sec button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.right-sec h1 {
+  font-size: 1.5rem; 
+}
+
+.card-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card1 {
+  position: relative;
+  width: 80%;
+}
+
+.card2 {
+  position: relative;
+  width: 80%;
+}
+
+.glass1 {
+  position: static;
+  text-align: center;
+}
+
+.glass2 {
+  position: static;
+  text-align: center;
+}
+
+.line {
+  display: none;
+}
+
+.line2 {
+  display: none;
+}
+
+.card-sec img[alt="light"] {
+  width: 1rem;
+}
+
+}
+
+
+
+@media screen and (min-width: 641px) and (max-width: 900px) {
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.contact {
+  display: none;
+}
+
+.mobile-bar {
+  display: none;
+}
+
+section {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.right-sec {
+  margin: 0rem;
+  padding: 0rem;
+  text-align: center;
+}
+
+
+.right-sec button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.right-sec h1 {
+  font-size: 1.5rem; 
+}
+
+.card-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card1 {
+  position: relative;
+  width: 80%;
+}
+
+.card2 {
+  position: relative;
+  width: 80%;
+}
+
+.glass1 {
+  position: static;
+  text-align: center;
+}
+
+.glass2 {
+  position: static;
+  text-align: center;
+}
+
+.line {
+  display: none;
+}
+
+.line2 {
+  display: none;
+}
+
+.card-sec img[alt="light"] {
+  width: 1rem;
+}
+
+}
+
+
+@media screen and (min-width: 901px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.mobile-bar {
+  display: none;
+}
+
+.contact {
+  display: block;
+}
+
+}
+
+
+
